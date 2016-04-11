@@ -1,0 +1,61 @@
+---
+name: page
+url: /page/:name
+---
+
+<div class="grid-container">
+    <div class="title-bar">
+        <div class="center title">{{params.name}}</div>
+        <span class="left"><a ui-sref="home"><img zf-iconic="" icon="chevron" data-direction="left" size="small"></a></span>
+    </div>
+    <zf-accordion auto-open="false">
+        <zf-accordion-item title="Метадані">
+            <form>
+                <label>
+                    Назва сторінки
+                    <input type="text" placeholder="Введіть назву сторінки">
+                </label>
+                <label>
+                    Заголовок
+                    <input type="text" placeholder="Введіть мета заголовок сторінки">
+                </label>
+            </form>
+        </zf-accordion-item>
+        <zf-accordion-item title="Наповнення">
+            <div id="cms-page-content" class="grid-container">
+                <div class="slot vertical grid-block">
+                        <div id="vz-logo-banner-component" class="vz-banner align-left grid-content">Заголовок</div>
+                        <div id="vz-navigation-pane-component" class="vz-menu horisontal grid-block">
+                            <div class="grid-content">Подарунки</div>
+                            <div class="grid-content">Гравірування</div>
+                            <div class="grid-content">Контакти</div>
+                            <div class="grid-content">Про нас</div>
+                    </div>
+                    <div class="slot vertical grid-block">
+                        <div class="vz-paragraph grid-content">Заголовок сторінки</div>
+                        <div class="slot horisontal grid-block">
+                            <div class="vz-banner grid-content">Баннер на гравірування</div>
+                            <div class="vz-banner grid-content">Баннер на подарунки</div>
+                            <div class="vz-banner grid-content">Баннер на контакти</div>
+                        </div>
+                        <div class="vz-paragraph grid-content">Привітання і пропозиція</div>
+                        <div class="vz-banner grid-content">Баннер на замовлення консультації</div>
+                    </div>
+                    <div class="slot horisontal grid-block">
+                            <div id="vz-footer-links-pane-component" class="vz-menu vertical grid-block">
+                                <div class="grid-content">Контакти</div>
+                                <div class="grid-content">Про нас</div>
+                                <div class="grid-content">Карта сайту</div>
+                            </div>
+                            <div id="vz-footer-socials-pane-component" class="vz-menu horisontal grid-block">
+                                <div class="grid-content">Фейсбук</div>
+                                <div class="grid-content">Гугл+</div>
+                                <div class="grid-content">Лінкедін</div>
+                        </div>
+                    </div>
+                    <div class="vz-paragraph grid-content">Авторські права</div>
+                </div>
+            </div>
+        </zf-accordion-item>
+    </zf-accordion>
+</div>

@@ -1,0 +1,35 @@
+@import "settings";
+@import "foundation";
+
+#cms-page-content.grid-container div {
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+}
+
+#cms-page-content .vz-menu {
+    background-color: #00b33c;
+}
+
+#cms-page-content div.vz-banner {
+    background-color: #cccc00;
+}
+#cms-page-content div.vz-vertical-slot {
+   background-color: #cc99ff;
+}
+
+#cms-page-content div.vz-orisontal-slot {
+   background-color: #ff6666;
+}
+
+#cms-page-content div.slot.horisontal {
+    background-color: #3385ff;
+}
+
+#cms-page-content div.slot.vertical {
+    background-color: #ff6666;
+}
+
+#cms-page-content div.vz-paragraph {
+    background-color: #ff9933;
+}
